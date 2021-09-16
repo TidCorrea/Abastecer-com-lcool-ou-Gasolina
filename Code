@@ -1,0 +1,40 @@
+var gasolina, alcool, diferenca, resposta;
+
+gasolina = prompt ("Digite o valor do litro da Gasolina? ")
+alcool = prompt ("Digite o valor do litro do Álcool? ")
+diferenca = parseFloat (alcool / gasolina)
+
+alert ("\n" + diferenca + " por litro")
+
+if (diferenca > 0.7){
+    alert("Vale mais a pena a Gasolina")
+} 
+   else if (diferenca < 0.7){
+       alert ("Vale a mais pena o Álcool")
+     }else{
+         alert ("Tanto faz abastecer com um ou outro! ")
+   }
+
+resposta = prompt("\nDeseja efetuar um novo cálculo? \nResponda S para SIM ou N para NÃO")
+
+while (resposta == "S"){
+  gasolina = prompt ("\nDigite o valor do litro da Gasolina? ")
+  alcool = prompt ("Digite o valor do litro do Álcool? ")
+  diferenca = parseFloat (alcool / gasolina)
+
+alert ("\n" + diferenca + " por litro")
+
+if (diferenca > 0.7){
+    alert("Vale mais a pena a Gasolina")
+} 
+   else if (diferenca < 0.7){
+       alert ("Vale a mais pena o Álcool")
+     }else{
+         alert ("Tanto faz abastecer com um ou outro! ")
+   }
+resposta = prompt("\nDeseja efetuar um novo cálculo? \nResponda S para SIM ou N para NÃO")
+}
+if(resposta == "N"){
+  alert("\nAté a Próxima! ")
+}
+
